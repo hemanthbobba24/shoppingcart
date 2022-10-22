@@ -1,0 +1,58 @@
+.img-container{
+    height: 90vh;
+    background: url('shoe.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    transition: 5s;
+    animation-name: animate;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  @keyframes animate{
+   30%{
+    background-image: url('watch5.jpg');
+   }
+   60%{
+    background-image: url('shoe20.jpg');
+   }
+   100%{
+    background-image: url('shoe4.jpg');
+   }
+  }
+  .caption{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 30%;
+  }
+  .caption h1{
+    font-size: 60px;
+    font-family: Helvetica;
+  }
+  .caption p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    color: white;
+  }
+  .caption a{
+    text-decoration: none;
+    padding: 7px 13px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: aquamarine;
+    color: white;
+    border-radius: 4px;
+    font-size: 20px;
+  }
+
+  @media (max-width: 950px){
+    .caption{
+      margin: 0;
+      width: 100%;
+    }
+}
