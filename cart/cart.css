@@ -1,0 +1,57 @@
+.main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    padding-top: 10px; 
+    background-color: rgb(154, 154, 154);
+    color: white;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 60%;
+    border: 2px solid rgb(200, 200, 200);
+  }
+  
+  td, th {
+    border: 2px solid rgb(200, 200, 200);
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr{
+    text-align: right;
+  }
+  img{
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
+  }
+  h1{
+    font-size: 30px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  table a{
+    text-decoration: none;
+    color: black;
+    padding: 10px 5px;
+    background-color: aquamarine;
+    border-radius: 5px;
+  }
+  .remove{
+    color: whitesmoke;
+    background-color: rgb(240, 42, 42);
+  }
+  .totalprice{
+    margin: 20px 0px;
+    font-size: 20px;
+  }
+
+  @media (max-width: 350px){
+    table{
+      width:20%;
+      padding: 0px;
+    }
+  }
