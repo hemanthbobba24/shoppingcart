@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&display=swap');
+body{
+    background-color: rgb(247, 98, 98);
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+    display:flex;
+    height:100vh;
+    align-items:center;
+    justify-content: center;
+}
+.login-page{
+ height:50vh;
+ width:30vw;
+ padding-top: 1rem;
+ display:flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ border-radius: 20px;
+ background: white;
+ text-align: center;
+ box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+}
+
+.text{
+    width:80%;
+    margin:10px;
+    padding:5px;
+    border: 1px solid;
+	border-radius: 5px;
+	font-size: 18px;
+	font-family: 'Noto Sans Mono', monospace;
+}
+.btn{
+  width:80%;
+  display: inline-block;
+  overflow: hidden;
+  background-color: #0bde83;
+  color:white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding:10px 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: 'Montserrat', sans-serif;
+  border:none;
+}
+.btn:hover{
+    background-color:  #069e5d;
+}
+#heading{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.error{
+    margin: 0px;
+    margin-bottom: 5px;
+    color: red;
+}
+
+@media (max-width: 950px){
+  .login-page{
+    width: 60%;
+    height: auto;
+  }
+}
+
+@media (max-width: 550px){
+  .login-page{
+    width: 80%;
+    height: auto;
+  }
+}
+
+@media (max-width: 330px){
+  .login-page{
+    width: 100%;
+    height: auto;
+  }
+}

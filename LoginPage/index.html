@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Plus+Jakarta+Sans:wght@200&display=swap');
+        </style>
+    <title>Appointment Booking</title>
+</head>
+<body>
+    <button type="button" class="log" id="log">LOGIN</button>
+    <div class="login-page" id="login-page">
+    <h1 id="heading">
+      LOGIN
+    </h1>
+    <input type="text" id="name" class="text" placeholder="Name"><br>
+    <input type="email" id="email" class="text" placeholder="MailID"><br>
+    <input type="password" id="pass" class="text" placeholder="password"><br>
+    <button type="button" class="btn">LOGIN</button>
+    </div>
+    <script>
+        const log=document.getElementById("log");
+        var loginpage=document.getElementById("login-page");
+        log.addEventListener('click',()=>{
+            loginpage.classList.toggle("mystyle");
+        });
+    </script>
+</body>
+</html>
